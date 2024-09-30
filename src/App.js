@@ -1,3 +1,4 @@
+import React from 'react';
 import ExpenseItem from "./components/ExpenseItem";
 
 function App() {
@@ -8,11 +9,7 @@ function App() {
       amount: 95.12,
       date: new Date("2022-07-14"),
     },
-    {
-      id: 'e2',
-      title: 'Uusi Töllö',
-      amount: 799.49,
-      date: new Date("2023-01-12"),
+    {id: 'e2',title: 'Uusi Töllö', amount: 799.49, date: new Date("2023-01-12"),
     },
     {
       id: 'e3',

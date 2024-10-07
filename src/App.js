@@ -1,5 +1,8 @@
 import React from 'react';
-import ExpenseItem from "./components/Expenses/ExpenseItem";
+
+import NewExpense from './components/NewExpense/NewExpense';
+import Expenses from './components/Expenses/Expenses';
+
 
 function App() {
   const expenses = [
@@ -47,9 +50,13 @@ function App() {
         amount={expenses[3].amount}
         date={expenses[3].date}
       />
+      return (
+    <div>
+      <NewExpense />
+      <Expenses items={expenses} />
       <p>Tuomas / VAMK / BIT</p>
     </div>
   );
-} 
+}
 
 export default App;
